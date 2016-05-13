@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC64B3171CE57A7900F5F82C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3161CE57A7900F5F82C /* Theme.swift */; };
+		DC64B3191CE57ECD00F5F82C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3181CE57ECD00F5F82C /* BaseViewController.swift */; };
+		DC64B31B1CE57F5100F5F82C /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B31A1CE57F5100F5F82C /* GuideViewController.swift */; };
+		DC64B31D1CE583DC00F5F82C /* GuideCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B31C1CE583DC00F5F82C /* GuideCell.swift */; };
+		DC64B3221CE588B900F5F82C /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3211CE588B900F5F82C /* ADViewController.swift */; };
+		DC64B3E21CE5929F00F5F82C /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */; };
+		DC64B3E41CE5941C00F5F82C /* MainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E31CE5941C00F5F82C /* MainAD.swift */; };
 		DC6F06191CE42B450044068C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F06181CE42B450044068C /* AppDelegate.swift */; };
-		DC6F061B1CE42B450044068C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F061A1CE42B450044068C /* ViewController.swift */; };
 		DC6F061E1CE42B450044068C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F061C1CE42B450044068C /* Main.storyboard */; };
 		DC6F06201CE42B450044068C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F061F1CE42B450044068C /* Assets.xcassets */; };
 		DC6F06231CE42B450044068C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F06211CE42B450044068C /* LaunchScreen.storyboard */; };
@@ -34,9 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC64B3161CE57A7900F5F82C /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		DC64B3181CE57ECD00F5F82C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../BaseViewController.swift; sourceTree = "<group>"; };
+		DC64B31A1CE57F5100F5F82C /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		DC64B31C1CE583DC00F5F82C /* GuideCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideCell.swift; sourceTree = "<group>"; };
+		DC64B3211CE588B900F5F82C /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
+		DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
+		DC64B3E31CE5941C00F5F82C /* MainAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAD.swift; sourceTree = "<group>"; };
 		DC6F06151CE42B450044068C /* TRAMVNXK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRAMVNXK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F06181CE42B450044068C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC6F061A1CE42B450044068C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC6F061D1CE42B450044068C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC6F061F1CE42B450044068C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC6F06221CE42B450044068C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,6 +86,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC64B3151CE57A6600F5F82C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3161CE57A7900F5F82C /* Theme.swift */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		DC64B31E1CE586A400F5F82C /* GuideView */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B31A1CE57F5100F5F82C /* GuideViewController.swift */,
+				DC64B31C1CE583DC00F5F82C /* GuideCell.swift */,
+			);
+			name = GuideView;
+			sourceTree = "<group>";
+		};
+		DC64B31F1CE5888400F5F82C /* AD */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3201CE5889500F5F82C /* Model */,
+				DC64B31E1CE586A400F5F82C /* GuideView */,
+			);
+			name = AD;
+			sourceTree = "<group>";
+		};
+		DC64B3201CE5889500F5F82C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3211CE588B900F5F82C /* ADViewController.swift */,
+				DC64B3E31CE5941C00F5F82C /* MainAD.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DC64B3E01CE5927C00F5F82C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
 		DC6F060C1CE42B450044068C = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				DC6F06181CE42B450044068C /* AppDelegate.swift */,
-				DC6F061A1CE42B450044068C /* ViewController.swift */,
+				DC64B3181CE57ECD00F5F82C /* BaseViewController.swift */,
+				DC64B31F1CE5888400F5F82C /* AD */,
+				DC64B3E01CE5927C00F5F82C /* Tools */,
+				DC64B3151CE57A6600F5F82C /* Other */,
 				DC6F061C1CE42B450044068C /* Main.storyboard */,
 				DC6F061F1CE42B450044068C /* Assets.xcassets */,
 				DC6F06211CE42B450044068C /* LaunchScreen.storyboard */,
@@ -211,6 +269,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = DC6F060C1CE42B450044068C;
 			productRefGroup = DC6F06161CE42B450044068C /* Products */;
@@ -256,8 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC6F061B1CE42B450044068C /* ViewController.swift in Sources */,
+				DC64B3171CE57A7900F5F82C /* Theme.swift in Sources */,
+				DC64B3E41CE5941C00F5F82C /* MainAD.swift in Sources */,
+				DC64B3E21CE5929F00F5F82C /* SwiftDictModel.swift in Sources */,
+				DC64B3221CE588B900F5F82C /* ADViewController.swift in Sources */,
+				DC64B31B1CE57F5100F5F82C /* GuideViewController.swift in Sources */,
+				DC64B31D1CE583DC00F5F82C /* GuideCell.swift in Sources */,
 				DC6F06191CE42B450044068C /* AppDelegate.swift in Sources */,
+				DC64B3191CE57ECD00F5F82C /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,8 +464,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+				);
 				INFOPLIST_FILE = TRAMVNXK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_4.4",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = origin.TRAMVNXK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -410,8 +486,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+				);
 				INFOPLIST_FILE = TRAMVNXK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_4.4",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/TRAMVNXK/Vender/UMengSDK/UMSocial_Sdk_Extra_Frameworks/Wechat",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = origin.TRAMVNXK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -484,6 +571,7 @@
 				DC6F063F1CE42B460044068C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC6F06401CE42B460044068C /* Build configuration list for PBXNativeTarget "TRAMVNXKTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +580,7 @@
 				DC6F06421CE42B460044068C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC6F06431CE42B460044068C /* Build configuration list for PBXNativeTarget "TRAMVNXKUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +589,7 @@
 				DC6F06451CE42B460044068C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

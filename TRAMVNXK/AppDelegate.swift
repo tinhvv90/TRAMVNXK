@@ -12,11 +12,66 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var adViewController : ADViewController?
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        NSThread.sleepForTimeInterval(1.0)
+        setAppSubject()
+        
+        addNotification()
+        
+        buildKeyWindow()
         return true
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+// MARK: - Public Method
+    private func buildKeyWindow() {
+        window = UIWindow(frame: ScreenBounds)
+        window?.makeKeyAndVisible()
+        
+        let isFirstOpen = NSUserDefaults.standardUserDefaults().objectForKey("isFirstOpen")
+        
+        if isFirstOpen == nil {
+            window?.rootViewController = GuideViewController()
+            NSUserDefaults.standardUserDefaults().setObject("isFirstOpenApp", forKey: "isFirstOpenApp")
+        }else {
+            loadADRootViewController()
+        }
+    }
+    
+    func loadADRootViewController() {
+        
+        adViewController = ADViewController()
+        weak var tmpSelf = self
+        MainAD.loadADData { (data, error) -> Void in
+            if data?.data?.img_name != nil {
+                tmpSelf?.adViewController?.imageName = data?.data?.img_name
+                tmpSelf?.window?.rootViewController = self.adViewController
+            }
+        }
+        
+    }
+    
+    func addNotification() {
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabbarControllerSucess:", name: ADImageLoadSecussed, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabbarControllerFale", name: ADImageLoadFail, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "shoMainTabBarController", name: GuideViewControllerDidFinish, object: nil)
+    }
+    
+//    MARK private method 
+    
+    private func setAppSubject() {
+        let tabBarAppearance = UITabBar.appearance()
+        tabBarAppearance.backgroundColor = UIColor.whiteColor()
+        tabBarAppearance.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        
+        let navBarnAppearance = UINavigationBar.appearance()
+        navBarnAppearance.translucent = false
     }
 
     func applicationWillResignActive(application: UIApplication) {
