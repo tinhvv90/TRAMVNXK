@@ -11,7 +11,7 @@ import UIKit
 class GuideCell: UICollectionViewCell {
     
     private let newImageView = UIImageView(frame: ScreenBounds)
-    private let nextButton = UIButton(frame: CGRectMake((ScreenWidth - 100) * 0.5,ScreenHeight - 110, 100,33))
+    private let nextButton = UIButton(frame: CGRectMake((ScreenWidth - 100) * 0.5,ScreenHeight - 110, 100,50))
     
     var newImage: UIImage? {
         didSet{
@@ -24,7 +24,7 @@ class GuideCell: UICollectionViewCell {
         newImageView.contentMode = UIViewContentMode.ScaleAspectFill
         contentView.addSubview(newImageView)
         
-        nextButton.setBackgroundImage(UIImage(named: ""), forState: UIControlState.Normal)
+        nextButton.setBackgroundImage(UIImage(named: "click"), forState: UIControlState.Normal)
         nextButton.addTarget(self, action: "nextButtonClick", forControlEvents: UIControlEvents.TouchUpInside)
         nextButton.hidden = true
         

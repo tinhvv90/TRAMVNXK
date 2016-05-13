@@ -10,6 +10,7 @@ import UIKit
 
 class GuideViewController: BaseViewController {
     
+    private var nextButton : UIButton?
     private var collectionView : UICollectionView?
     private var imageNames = ["guide_1","guide_2","guide_3","guide_4"]
     private var cellGuide = "GuideCell"
@@ -20,7 +21,7 @@ class GuideViewController: BaseViewController {
         super.viewDidLoad()
         UIApplication.sharedApplication().setStatusBarHidden(false, withAnimation: UIStatusBarAnimation.None)
         buildCollectionView()
-        
+        buildPageController()
     }
     
 //    MARK: - Buide UI
@@ -50,7 +51,7 @@ class GuideViewController: BaseViewController {
         view.addSubview(collectionView!)
     }
     
-    private func buidePageController() {
+    private func buildPageController() {
         pageController.numberOfPages = imageNames.count
         pageController.currentPage = 0
         view.addSubview(pageController)
@@ -73,6 +74,24 @@ extension GuideViewController : UICollectionViewDataSource, UICollectionViewDele
             cell.setNextButtonHidden(true)
         }
         return cell
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if scrollView.contentOffset.x == ScreenWidth * CGFloat(imageNames.count - 1 ) {
+            let cell = collectionView?.cellForItemAtIndexPath(NSIndexPath(forRow: imageNames.count - 1, inSection: 0)) as! GuideCell
+            cell.setNextButtonHidden(false)
+            isHiddenNextButton = false
+        }
+    }
+    
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.contentOffset.x != ScreenWidth * CGFloat(imageNames.count - 1) && !isHiddenNextButton && scrollView.contentOffset.x > ScreenWidth * CGFloat(imageNames.count - 2) {
+            let cell = collectionView!.cellForItemAtIndexPath(NSIndexPath(forRow: imageNames.count - 1, inSection: 0)) as! GuideCell
+            cell.setNextButtonHidden(true)
+            isHiddenNextButton = true
+        }
+        
+        pageController.currentPage = Int(scrollView.contentOffset.x / ScreenWidth + 0.5)
     }
     
     

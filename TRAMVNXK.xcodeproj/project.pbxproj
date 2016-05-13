@@ -14,12 +14,26 @@
 		DC64B3221CE588B900F5F82C /* ADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3211CE588B900F5F82C /* ADViewController.swift */; };
 		DC64B3E21CE5929F00F5F82C /* SwiftDictModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */; };
 		DC64B3E41CE5941C00F5F82C /* MainAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E31CE5941C00F5F82C /* MainAD.swift */; };
+		DC64B3E71CE5D31F00F5F82C /* AnimationTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E61CE5D31F00F5F82C /* AnimationTabBarController.swift */; };
+		DC64B3E91CE5D73500F5F82C /* ShopCarRedDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3E81CE5D73500F5F82C /* ShopCarRedDotView.swift */; };
+		DC64B3EB1CE5DD8D00F5F82C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3EA1CE5DD8D00F5F82C /* MainTabBarController.swift */; };
+		DC64B3EE1CE5E09000F5F82C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3ED1CE5E09000F5F82C /* BaseNavigationController.swift */; };
+		DC64B3F21CE5E27600F5F82C /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3F11CE5E27600F5F82C /* AnimationViewController.swift */; };
+		DC64B3F71CE5E5CF00F5F82C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3F61CE5E5CF00F5F82C /* HomeViewController.swift */; };
+		DC64B3F91CE5E60F00F5F82C /* SelectedAdressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3F81CE5E60F00F5F82C /* SelectedAdressViewController.swift */; };
+		DC64B3FB1CE5E68500F5F82C /* SupermarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3FA1CE5E68500F5F82C /* SupermarketViewController.swift */; };
+		DC64B3FD1CE5E6B300F5F82C /* ShopCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3FC1CE5E6B300F5F82C /* ShopCartViewController.swift */; };
+		DC64B3FF1CE5E6F200F5F82C /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC64B3FE1CE5E6F200F5F82C /* MineViewController.swift */; };
 		DC6F06191CE42B450044068C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F06181CE42B450044068C /* AppDelegate.swift */; };
 		DC6F061E1CE42B450044068C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F061C1CE42B450044068C /* Main.storyboard */; };
 		DC6F06201CE42B450044068C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC6F061F1CE42B450044068C /* Assets.xcassets */; };
 		DC6F06231CE42B450044068C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC6F06211CE42B450044068C /* LaunchScreen.storyboard */; };
 		DC6F062E1CE42B460044068C /* TRAMVNXKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F062D1CE42B460044068C /* TRAMVNXKTests.swift */; };
 		DC6F06391CE42B460044068C /* TRAMVNXKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F06381CE42B460044068C /* TRAMVNXKUITests.swift */; };
+		DC9B593B1CE60F09002E3F7B /* UIBarbuttonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B593A1CE60F09002E3F7B /* UIBarbuttonItem+Extention.swift */; };
+		DC9B593D1CE60F5C002E3F7B /* ItemButton+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B593C1CE60F5C002E3F7B /* ItemButton+Extention.swift */; };
+		DC9B593F1CE6123F002E3F7B /* HomeTableHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B593E1CE6123F002E3F7B /* HomeTableHeadView.swift */; };
+		DC9B59411CE612F3002E3F7B /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9B59401CE612F3002E3F7B /* PageScrollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,16 @@
 		DC64B3211CE588B900F5F82C /* ADViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADViewController.swift; sourceTree = "<group>"; };
 		DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDictModel.swift; sourceTree = "<group>"; };
 		DC64B3E31CE5941C00F5F82C /* MainAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAD.swift; sourceTree = "<group>"; };
+		DC64B3E61CE5D31F00F5F82C /* AnimationTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationTabBarController.swift; sourceTree = "<group>"; };
+		DC64B3E81CE5D73500F5F82C /* ShopCarRedDotView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCarRedDotView.swift; sourceTree = "<group>"; };
+		DC64B3EA1CE5DD8D00F5F82C /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		DC64B3ED1CE5E09000F5F82C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DC64B3F11CE5E27600F5F82C /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		DC64B3F61CE5E5CF00F5F82C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DC64B3F81CE5E60F00F5F82C /* SelectedAdressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedAdressViewController.swift; sourceTree = "<group>"; };
+		DC64B3FA1CE5E68500F5F82C /* SupermarketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupermarketViewController.swift; sourceTree = "<group>"; };
+		DC64B3FC1CE5E6B300F5F82C /* ShopCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopCartViewController.swift; sourceTree = "<group>"; };
+		DC64B3FE1CE5E6F200F5F82C /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		DC6F06151CE42B450044068C /* TRAMVNXK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRAMVNXK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F06181CE42B450044068C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC6F061D1CE42B450044068C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +83,10 @@
 		DC6F06341CE42B460044068C /* TRAMVNXKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRAMVNXKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC6F06381CE42B460044068C /* TRAMVNXKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRAMVNXKUITests.swift; sourceTree = "<group>"; };
 		DC6F063A1CE42B460044068C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC9B593A1CE60F09002E3F7B /* UIBarbuttonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarbuttonItem+Extention.swift"; sourceTree = "<group>"; };
+		DC9B593C1CE60F5C002E3F7B /* ItemButton+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemButton+Extention.swift"; sourceTree = "<group>"; };
+		DC9B593E1CE6123F002E3F7B /* HomeTableHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableHeadView.swift; sourceTree = "<group>"; };
+		DC9B59401CE612F3002E3F7B /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +153,74 @@
 			isa = PBXGroup;
 			children = (
 				DC64B3E11CE5929F00F5F82C /* SwiftDictModel.swift */,
+				DC9B593A1CE60F09002E3F7B /* UIBarbuttonItem+Extention.swift */,
+				DC9B593C1CE60F5C002E3F7B /* ItemButton+Extention.swift */,
 			);
 			name = Tools;
+			sourceTree = "<group>";
+		};
+		DC64B3E51CE5D30E00F5F82C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3EC1CE5DDC600F5F82C /* Common */,
+				DC64B3E81CE5D73500F5F82C /* ShopCarRedDotView.swift */,
+				DC64B3F01CE5E26300F5F82C /* View Common */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		DC64B3EC1CE5DDC600F5F82C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3181CE57ECD00F5F82C /* BaseViewController.swift */,
+				DC64B3EA1CE5DD8D00F5F82C /* MainTabBarController.swift */,
+				DC64B3E61CE5D31F00F5F82C /* AnimationTabBarController.swift */,
+				DC64B3ED1CE5E09000F5F82C /* BaseNavigationController.swift */,
+				DC64B3F81CE5E60F00F5F82C /* SelectedAdressViewController.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		DC64B3EF1CE5E15500F5F82C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3F61CE5E5CF00F5F82C /* HomeViewController.swift */,
+				DC9B593E1CE6123F002E3F7B /* HomeTableHeadView.swift */,
+				DC9B59401CE612F3002E3F7B /* PageScrollView.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		DC64B3F01CE5E26300F5F82C /* View Common */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3F11CE5E27600F5F82C /* AnimationViewController.swift */,
+			);
+			name = "View Common";
+			sourceTree = "<group>";
+		};
+		DC64B3F31CE5E58F00F5F82C /* SupperMarket */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3FA1CE5E68500F5F82C /* SupermarketViewController.swift */,
+			);
+			name = SupperMarket;
+			sourceTree = "<group>";
+		};
+		DC64B3F41CE5E5AD00F5F82C /* ShopCart */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3FC1CE5E6B300F5F82C /* ShopCartViewController.swift */,
+			);
+			name = ShopCart;
+			sourceTree = "<group>";
+		};
+		DC64B3F51CE5E5BD00F5F82C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DC64B3FE1CE5E6F200F5F82C /* MineViewController.swift */,
+			);
+			name = Mine;
 			sourceTree = "<group>";
 		};
 		DC6F060C1CE42B450044068C = {
@@ -153,8 +247,12 @@
 			isa = PBXGroup;
 			children = (
 				DC6F06181CE42B450044068C /* AppDelegate.swift */,
-				DC64B3181CE57ECD00F5F82C /* BaseViewController.swift */,
+				DC64B3E51CE5D30E00F5F82C /* Base */,
 				DC64B31F1CE5888400F5F82C /* AD */,
+				DC64B3EF1CE5E15500F5F82C /* Home */,
+				DC64B3F31CE5E58F00F5F82C /* SupperMarket */,
+				DC64B3F41CE5E5AD00F5F82C /* ShopCart */,
+				DC64B3F51CE5E5BD00F5F82C /* Mine */,
 				DC64B3E01CE5927C00F5F82C /* Tools */,
 				DC64B3151CE57A6600F5F82C /* Other */,
 				DC6F061C1CE42B450044068C /* Main.storyboard */,
@@ -315,12 +413,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC64B3FD1CE5E6B300F5F82C /* ShopCartViewController.swift in Sources */,
+				DC64B3E71CE5D31F00F5F82C /* AnimationTabBarController.swift in Sources */,
+				DC64B3E91CE5D73500F5F82C /* ShopCarRedDotView.swift in Sources */,
+				DC9B593B1CE60F09002E3F7B /* UIBarbuttonItem+Extention.swift in Sources */,
+				DC64B3F91CE5E60F00F5F82C /* SelectedAdressViewController.swift in Sources */,
+				DC64B3EB1CE5DD8D00F5F82C /* MainTabBarController.swift in Sources */,
 				DC64B3171CE57A7900F5F82C /* Theme.swift in Sources */,
 				DC64B3E41CE5941C00F5F82C /* MainAD.swift in Sources */,
+				DC9B59411CE612F3002E3F7B /* PageScrollView.swift in Sources */,
+				DC64B3F71CE5E5CF00F5F82C /* HomeViewController.swift in Sources */,
+				DC9B593D1CE60F5C002E3F7B /* ItemButton+Extention.swift in Sources */,
 				DC64B3E21CE5929F00F5F82C /* SwiftDictModel.swift in Sources */,
 				DC64B3221CE588B900F5F82C /* ADViewController.swift in Sources */,
+				DC9B593F1CE6123F002E3F7B /* HomeTableHeadView.swift in Sources */,
 				DC64B31B1CE57F5100F5F82C /* GuideViewController.swift in Sources */,
+				DC64B3FF1CE5E6F200F5F82C /* MineViewController.swift in Sources */,
+				DC64B3EE1CE5E09000F5F82C /* BaseNavigationController.swift in Sources */,
 				DC64B31D1CE583DC00F5F82C /* GuideCell.swift in Sources */,
+				DC64B3FB1CE5E68500F5F82C /* SupermarketViewController.swift in Sources */,
+				DC64B3F21CE5E27600F5F82C /* AnimationViewController.swift in Sources */,
 				DC6F06191CE42B450044068C /* AppDelegate.swift in Sources */,
 				DC64B3191CE57ECD00F5F82C /* BaseViewController.swift in Sources */,
 			);

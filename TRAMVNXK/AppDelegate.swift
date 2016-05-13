@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         addNotification()
         
-        buildKeyWindow()
+        buildKeyWindow()        
+        
         return true
     }
     
@@ -50,8 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         weak var tmpSelf = self
         MainAD.loadADData { (data, error) -> Void in
             if data?.data?.img_name != nil {
-                tmpSelf?.adViewController?.imageName = data?.data?.img_name
-                tmpSelf?.window?.rootViewController = self.adViewController
+                tmpSelf!.adViewController!.imageName = data!.data!.img_name
+                tmpSelf!.window?.rootViewController = self.adViewController
             }
         }
         
@@ -63,6 +64,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "shoMainTabBarController", name: GuideViewControllerDidFinish, object: nil)
     }
     
+    
+// MARK: - Action
+    func showMainTabbarControllerSucess(noti: NSNotification) {
+        let adImage = noti.object as! UIImage
+        let mainTabBar = MainTabBarController()
+        mainTabBar.adImage = adImage
+        window?.rootViewController = mainTabBar
+        
+    }
+    
+    func showMainTabbarControllerFale() {
+        window!.rootViewController = MainTabBarController()
+    }
+    
+    func shoMainTabBarController() {
+        window!.rootViewController = MainTabBarController()
+    }
+
+   
 //    MARK private method 
     
     private func setAppSubject() {
